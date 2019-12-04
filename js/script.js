@@ -1,5 +1,7 @@
-
-
+var currentPlayer = 'x'
+var secondTurn = 'o'
+var turns = '0'
+var endGame = 'false'
 
 
 
@@ -40,4 +42,5 @@ $("#button8").click(function() {
 $("#button9").click(function() {
     performLogic("#button9","#tile9");
 });
+
 
