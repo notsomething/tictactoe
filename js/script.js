@@ -1,46 +1,25 @@
 var currentPlayer = 'x'
 var secondTurn = 'o'
-var turns = '0'
+var turns = 0
 var endGame = 'false'
-
-
-
-
-
-$("#button1").click(function() {
-    performLogic("#button1","#tile1");
-});
-
-$("#button2").click(function() {
-    performLogic("#button2","#tile2");
-});
-
-$("#button3").click(function() {
-    performLogic("#button3","#tile3");
-});
-
-$("#button4").click(function() {
-    performLogic("#button4","#tile4");
-});
-
-$("#button5").click(function() {
-    performLogic("#button5","#tile5");
-});
-
-$("#button6").click(function() {
-    performLogic("#button6","#tile6");
-});
-
-$("#button7").click(function() {
-    performLogic("#button7","#tile7");
-});
-
-$("#button8").click(function() {
-    performLogic("#button8","#tile8");
-});
-
-$("#button9").click(function() {
-    performLogic("#button9","#tile9");
-});
-
-
+var isWinner;
+let tile1 = ''
+let tile2 = ''
+let tile3 = ''
+let tile4 = ''
+let tile5 = ''
+let tile6 = ''
+let tile7 = ''
+let tile8 = ''
+let tile9 = ''
+git 
+function getWinner() {
+if (tile1===tile2 && tile2===tile3) {
+  $('#result').html(tile1 + "wins") 
+  isWinner = true
+} else if (tile4===tile5 && tile5===tile6) {
+  $('#result').html(tile4 + "wins")  
+} else if (tile7===tile8 && tile8===tile9) {
+  $('#result').html(tile4 + "wins")  
+}
+}
